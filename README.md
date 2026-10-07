@@ -1,93 +1,108 @@
-# Scientific Explosion (科学爆发 - 召唤众神) Agent Skill
+# Scientific Explosion (科学爆发)
+
+> **A Multi-Perspective Dialectical Inquiry & Council Review Framework for AI Agents**  
+> 面向科学研究、算法设计与重大技术决策的**多流派辩证审议与思维模型矩阵** Agent Skill。
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-YUAILUN%2Fscientific--explosion-181717?logo=github)](https://github.com/YUAILUN/scientific-explosion)
-[![Original Project](https://img.shields.io/badge/Inspired_By-Pantheon_K--Dense-blue)](https://pantheon.k-dense.ai/)
-[![Standard](https://img.shields.io/badge/Agent_Skills-Standard_Compliant-green)](https://github.com/anthropics/skills)
-[![License](https://img.shields.io/badge/License-MIT-purple)](LICENSE)
-
-> **“科学爆发 (Scientific Explosion)”**：提出一个科学、算法或研究难题。从亚里士多德到卡帕西，历史上的 80 位伟大思想家现场展开多维辩论，每个人都用自己的声音回答。
-> 
-> 本项目将 [Pantheon](https://pantheon.k-dense.ai/)（基于 [K-Dense-AI/mimeographs](https://github.com/K-Dense-AI/mimeographs)）完整蒸馏为标准的 Agent Skill，支持无缝安装到 **OpenAI Codex**、**Google Antigravity**、**Claude Code** 以及 **Cursor** 中。
+[![Standard](https://img.shields.io/badge/Agent_Skills-Open_Standard-green)](https://github.com/anthropics/skills)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
 ---
 
-## 目录结构
+## 📌 项目定位 (Overview)
+
+在面对前沿科学假设、前沿 AI 架构选型（如 Scaling Law vs. 因果表征 vs. 世界模型）或重大系统工程决策时，常规单一 AI 生成的回答容易陷入统计学上的**中庸折中（Mode Collapse）**，给出模棱两可、看似面面俱到却缺乏判决性力度的结论。
+
+**Scientific Explosion (科学爆发)** 提供了一套多智能体辩证审议工作流（Dialectical Council Review SOP）：
+- **多流派思维矩阵**：汇聚哲学认识论、经验实证、因果推断、前沿机器学习与宏观系统工程等 80 个经过公开学术文献沉淀的经典思维透镜。
+- **真实冲突展开**：从第一性原理、因果干预、算力法则到物理与商业现实约束，展开多维度思想对抗与假设压力测试。
+- **反折中终局提炼**：拒绝和稀泥，提炼出不可动摇的底线共识、深层公理断层（世界观冲突根源）以及可落地的**可证伪判决性实验（Crucible Experiments）**。
+
+兼容 **OpenAI Codex**、**Google Antigravity**、**Claude Code** 以及 **Cursor** 等支持标准 Agent Skill 的环境。
+
+---
+
+## ⚖️ 免责声明与学术伦理 (Disclaimer & Ethics)
+
+1. **概念性方法论模拟**：本项目中所有学者与思想家透镜，均作为**学术概念模型与方法论代表（Epistemic Lenses）**，用于科研思辨、架构推演与思想实验；
+2. **非真实个人言论**：系统生成内容基于公开学术理论、方法论框架与历史文献逻辑推演，**绝不代表任何现存学者或历史先贤本人的真实陈述、当下意志或个人背书**；
+3. **科研辅助性质**：本工具产出的推论与实验设计仅供科研人员决策参考与头脑风暴，不作为最终临床医疗、法律裁决或商业投资凭证。
+
+---
+
+## 🏛️ 四大专题审议分院 (Chambers)
+
+| 专题分院 | 关注领域 | 核心方法论代表透镜 |
+|---|---|---|
+| **计算与机器智能分院** | Scaling Law 边界、世界模型、因果推理、对齐与表征 | 因果阶梯 (Pearl)、算力教训 (Sutton)、Software 3.0 (Karpathy)、JEPA (LeCun)、信息压缩 (Sutskever) |
+| **哲学与认识论分院** | 科学实在论、归纳怀疑、意识与语言界限、工程伦理 | 四因说 (Aristotle)、先验综合 (Kant)、经验归纳批判 (Hume)、语言游戏 (Wittgenstein)、行动复多性 (Arendt) |
+| **自然科学与生命医学分院** | 复杂生物网络、高通量筛选、流行病学队列、科研转化 | 单细胞图谱 (Regev)、大科学协同 (Lander)、纳米药物工程 (Langer)、长期队列流行病学 (Willett) |
+| **产业工程与系统落地分院** | 第一性物理极限、制造工程瓶颈、资本配置、组织护城河 | 物理第一性原理 (Musk)、人文艺术十字路口 (Jobs)、能力圈与安全边际 (Buffett)、内生有机增长 (Faulkner) |
+
+---
+
+## 📂 项目结构 (Repository Layout)
 
 ```
-pantheon/
-├── SKILL.md                          # 核心技能定义与 5 阶段执行 SOP
-├── README.md                         # 安装与使用全景指南
+scientific-explosion/
+├── SKILL.md                          # 核心技能规范与 5 阶段辩证审议 SOP
+├── README.md                         # 规范说明、免责声明与安装指南
 ├── references/
-│   ├── catalog_80_thinkers.md        # 80 位先贤全景花名册与专属安装代码
-│   ├── chambers.md                   # 预设主题分院（AI、哲学、生科、产业）
-│   ├── synthesis_framework.md        # 辩证共识与深层断层图谱指南
-│   ├── mimeo_guide.md                # K-Dense Mimeo 单体深度 Skill 安装指南
-│   └── pantheon_data.json            # 80 位思想家结构化元数据
+│   ├── catalog_80_thinkers.md        # 80 个方法论模型详引与思维透镜索引
+│   ├── chambers.md                   # 专题审议分院详细配置
+│   ├── synthesis_framework.md        # 辩证共识与深层公理断层提炼规范
+│   ├── mimeo_guide.md                # 独立单体思维技能扩展指引
+│   └── pantheon_data.json            # 结构化思维模型元数据
 └── scripts/
-    └── pantheon_cli.py               # 命令行组阁与检索辅助脚本
+    └── pantheon_cli.py               # 本地组阁匹配、思维模型检索与审议生成 CLI
 ```
 
 ---
 
-## 一键安装指南 (Installation)
+## 💻 一键安装与配置 (Installation)
 
-### 1. 安装到 Google Antigravity
-Antigravity 会自动读取 `~/.gemini/config/skills/` 目录中的技能：
-
+### 1. 安装至 Google Antigravity
 ```bash
-# 创建软链接到 Antigravity 全局技能目录
-ln -sfn /Users/yuailun/.gemini/antigravity/scratch/pantheon ~/.gemini/config/skills/pantheon
+ln -sfn "$(pwd)" ~/.gemini/config/skills/pantheon
 ```
 
-### 2. 安装到 OpenAI Codex
-Codex 会自动读取 `~/.codex/skills/` 目录中的技能：
-
+### 2. 安装至 OpenAI Codex
 ```bash
-# 创建软链接到 Codex 全局技能目录
-ln -sfn /Users/yuailun/.gemini/antigravity/scratch/pantheon ~/.codex/skills/pantheon
+ln -sfn "$(pwd)" ~/.codex/skills/pantheon
 ```
 
-### 3. 安装到通用 Agent Skills 根目录 (`~/.agents/skills`)
+### 3. 安装至通用 Agent 根目录
 ```bash
-ln -sfn /Users/yuailun/.gemini/antigravity/scratch/pantheon ~/.agents/skills/pantheon
+ln -sfn "$(pwd)" ~/.agents/skills/pantheon
 ```
-
-*(也可以直接运行附带的安装命令快速完成全平台链接)*。
 
 ---
 
-## 如何使用 (Usage)
+## 💡 使用方法 (Usage Examples)
 
-在 Codex 或 Antigravity 聊天窗口中，你可以像在原版网页上一样，提出任何深刻的科学、算法、哲学或商业问题：
+在对话环境中，输入以下指令或直接提出复杂科研假说：
 
-### 示例 1：通用跨学科联席辩论
-> **用户输入**：
-> `/pantheon 人类是否应该暂停前沿超大规模 AI 模型的训练？`
+### 示例 1：全域跨学科审议
+> **输入**：
+> `/pantheon 当前大语言模型的推理能力涌现，究竟是统计相关性的极致压缩，还是形成了真正的隐式世界模型？`
 
-**万神殿输出流程**：
-1. **智能组阁**：自动召集 `stuart-russell`（AI对齐与安全）、`richard-s-sutton`（算力教训）、`elon-musk`（生存风险与加速制造）、`hannah-arendt`（技术极权与行动复多性）、`andrej-karpathy`（工程锯齿状智能）。
-2. **具身发言**：每位大师以真实第一人称发声，引用各自的思维模型和代表作。
-3. **现场质询**：各流派大师针锋相对，直击彼此的假设死穴。
-4. **终局提炼**：输出跨学科共识、不可调和的世界观断层、以及可执行的科研验证路线。
+### 示例 2：指定专场分院
+> **输入**：
+> `召唤众神 --chamber ai 蛋白质结构预测领域，纯数据驱动深度学习与量子化学第一性原理计算如何结合？`
 
-### 示例 2：指定专场分院辩论
-> **用户输入**：
-> `召唤众神 --chamber ai 纯自回归语言模型（Next-token prediction）能否通向 AGI 世界模型？`
-
-### 示例 3：指定特定人物点将
-> **用户输入**：
-> `召唤 卡帕西、珀尔、萨顿、亚里士多德 讨论：如何在自动驾驶中平衡端到端神经网络与因果逻辑规则？`
+### 示例 3：指定思维透镜点将
+> **输入**：
+> `召唤 珀尔、萨顿、卡帕西、亚里士多德 讨论：自动驾驶多模态大模型的因果鲁棒性瓶颈。`
 
 ---
 
-## 80 位先贤单体深度 Skill 扩展
+## 🙏 致谢与开源说明 (Acknowledgements)
 
-如果你希望让某位思想家常驻在你的当前代码仓库（例如让 Karpathy 审查你写的神经网络，让 Jobs 审查前端交互）：
-你可以使用标准命令安装其单体包：
+- 理论与数据基础：本项目的 80 位思想模型矩阵结构参考并整理自学术开源项目 [K-Dense Mimeographs](https://github.com/K-Dense-AI/mimeographs)（遵循 MIT License），在此向相关研究团队致谢。
+- 架构遵循：本技能遵循开放的 [Agent Skills](https://github.com/anthropics/skills) 规范标准设计与构建。
 
-```bash
-npx skills add K-Dense-AI/mimeographs/andrej-karpathy
-npx skills add K-Dense-AI/mimeographs/steve-jobs
-npx skills add K-Dense-AI/mimeographs/judea-pearl
-```
-详见 `references/mimeo_guide.md`。
+---
+
+## 📄 许可证 (License)
+
+本项目采用 [MIT 许可证](LICENSE)。
