@@ -1,10 +1,11 @@
-# Pantheon (召唤众神) Agent Skill
+# Scientific Explosion (科学爆发 - 召唤众神) Agent Skill
 
-[![Project](https://img.shields.io/badge/Original_Project-Pantheon_K--Dense-blue)](https://pantheon.k-dense.ai/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-YUAILUN%2Fscientific--explosion-181717?logo=github)](https://github.com/YUAILUN/scientific-explosion)
+[![Original Project](https://img.shields.io/badge/Inspired_By-Pantheon_K--Dense-blue)](https://pantheon.k-dense.ai/)
 [![Standard](https://img.shields.io/badge/Agent_Skills-Standard_Compliant-green)](https://github.com/anthropics/skills)
 [![License](https://img.shields.io/badge/License-MIT-purple)](LICENSE)
 
-> **提出一个科学或研究问题。从亚里士多德到卡帕西，历史上的 80 位伟大思想家现场回答，每个人都用自己的声音回答。**
+> **“科学爆发 (Scientific Explosion)”**：提出一个科学、算法或研究难题。从亚里士多德到卡帕西，历史上的 80 位伟大思想家现场展开多维辩论，每个人都用自己的声音回答。
 > 
 > 本项目将 [Pantheon](https://pantheon.k-dense.ai/)（基于 [K-Dense-AI/mimeographs](https://github.com/K-Dense-AI/mimeographs)）完整蒸馏为标准的 Agent Skill，支持无缝安装到 **OpenAI Codex**、**Google Antigravity**、**Claude Code** 以及 **Cursor** 中。
 
