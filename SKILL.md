@@ -1,10 +1,11 @@
 ---
-name: pantheon
+name: scientific-explosion
 description: >
-  科学爆发 (Scientific Explosion) — 多流派辩证审议与跨学科科学思维决策框架。
-  集成哲学认识论、经验实证、因果推断、前沿机器学习与系统工程等 80 个经典思维模型透镜。
+  科学爆发 (Scientific Explosion / 召唤众神) — 多流派辩证审议与跨学科科学思维决策框架。
+  集成哲学认识论、经验实证、因果推断、前沿机器学习与系统工程等 80 个经典思维模型透镜（基于学术开源思维库构建）。
   适用于：面临科学难题、科研假设评估、AI/技术架构选型争论（如 Scaling Law vs 因果推断 vs 世界模型）、重大商业与工程取舍、
   伦理困境时，召集跨流派专家思维模型展开深度辩论，剖析底层假设冲突，并产出反折中底线共识与可证伪科研验证方案。
+  触发词：科学爆发, scientific-explosion, pantheon, 召唤众神, 80 minds, 思想家辩论
 ---
 
 # Scientific Explosion (科学爆发) — 多流派辩证审议与思维模型矩阵引擎
